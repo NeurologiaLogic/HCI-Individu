@@ -1,0 +1,1829 @@
+.homepage {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.homepage header {
+  padding: none;
+  position: relative;
+  width: 1300px;
+  height: 500px;
+  background-image: url("../assets/homepage/cover.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.homepage header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.homepage header h1 {
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+}
+
+.homepage header .prev {
+  font-size: 2rem;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.21);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.homepage header .next {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.21);
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  font-size: 2rem;
+  z-index: 5;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.homepage .about-us {
+  background: #172229;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1083.33333px;
+  margin: 1rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .about-us .left {
+  width: 100rem;
+  height: 14rem;
+  background-image: url("../assets/homepage/Koenigsegg-agera.jpg");
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.homepage .about-us .right {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.homepage .about-us .right h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.homepage .about-us .right p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.homepage .about-us .right button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: .5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.homepage .about-us .right button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.homepage .about-us .right button:hover:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem solid white;
+  cursor: pointer;
+  background-color: white;
+}
+
+.homepage .about-us .right button:hover {
+  color: white;
+}
+
+.homepage .about-us .right button:after {
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
+.homepage .about-us .right button:hover:after {
+  color: black;
+  padding: 0rem;
+  content: "Learn More";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.homepage .cards-container {
+  padding: 1rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.homepage .cards-container .card {
+  border-radius: 50%;
+  margin: 1rem;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.homepage .cards-container .card h2 {
+  white-space: nowrap;
+}
+
+.homepage .cards-container .card p {
+  white-space: wrap;
+}
+
+.homepage .cards-container .card a {
+  text-decoration: none;
+  color: black;
+}
+
+.homepage .promotions {
+  max-width: 1083.33333px;
+  margin: 1rem auto;
+}
+
+.homepage .promotions .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage .promotions .top .container {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homepage .promotions .top .container .left {
+  width: 520px;
+  height: 260px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  background-image: url("../assets/homepage/Nissan-Skyline-GT-R-R34.jpg");
+  background-size: cover;
+}
+
+.homepage .promotions .top .container .left:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage .promotions .top .container .left:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.homepage .promotions .top .container .right {
+  width: 520px;
+  height: 260px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  background-image: url("../assets/homepage/Koenigsegg.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.homepage .promotions .top .container .right:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage .promotions .top .container .right:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.homepage .promotions .top .container .text-wrapper {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+}
+
+.homepage .promotions .bottom-container {
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.homepage .promotions .bottom-container .bottom {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 393.93939px;
+  background-image: url("../assets/homepage/nissan.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.homepage .promotions .bottom-container .bottom:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage .promotions .bottom-container .bottom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.homepage .promotions .bottom-container .text-wrapper {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+}
+
+.formpage {
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.formpage main {
+  background-image: url("../assets/formPage/form.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  position: relative;
+  width: 1300px;
+  height: 530px;
+}
+
+.formpage main:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.formpage main .box {
+  z-index: 10;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formpage main .box .left {
+  position: relative;
+  font-weight: medium;
+  margin-top: 1rem;
+  margin-left: 48rem;
+  color: #252222;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 10.2224px 23.6393px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10.2224px 23.6393px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(52px);
+          backdrop-filter: blur(52px);
+  border-radius: 8.94458px;
+  padding: 3rem 2rem;
+  display: inline-block;
+}
+
+.formpage main .box .left .wrapper {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formpage main .box .left .wrapper label {
+  margin: 0.2rem 0;
+}
+
+.formpage main .box .left .wrapper input {
+  border: none;
+  border-radius: 0.2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.formpage main .box .left .wrapper input:focus {
+  font-size: 1rem;
+}
+
+.formpage main .box .left .wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formpage main .box .left .wrapper .flex .bod {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formpage main .box .left .wrapper .flex .bod #BOD {
+  border-radius: 0.2rem;
+  height: 2rem;
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.formpage main .box .left .wrapper .flex .bod #BOD:focus {
+  font-size: 1rem;
+}
+
+.formpage main .box .left .wrapper .flex .gender {
+  margin-left: 1rem;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formpage main .box .left .wrapper .flex .gender select {
+  border-radius: 0.2rem;
+  border: none;
+  height: 2.5rem;
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.formpage main .box .left .wrapper .flex .gender select:focus {
+  font-size: 1rem;
+}
+
+.formpage main .box .left h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.formpage main .box .left p {
+  margin: 0.5rem 0;
+}
+
+.formpage main .box .left .check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 0;
+}
+
+.formpage main .box .left .check-box label {
+  margin-left: 0.5rem;
+}
+
+.formpage main .box .left button {
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.formpage main .box .left button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.formpage main .box .left button:hover:before {
+  content: "";
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.formpage main .box .left button:hover {
+  color: black;
+}
+
+.formpage main .box .left button:after {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+}
+
+.formpage main .box .left button:hover:after {
+  opacity: 1;
+  color: white;
+  padding: 1rem;
+  content: "Subscribe";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.formpage main .box .right {
+  z-index: -1;
+  position: absolute;
+  padding: 3rem;
+  top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formpage main .box .right h1 {
+  font-size: 4rem;
+  width: 45rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.productpage {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.productpage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.productpage main .left-section {
+  width: 30%;
+  padding: 0 0 0 2rem;
+  background-color: white;
+}
+
+.productpage main .left-section ul {
+  list-style: none;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+}
+
+.productpage main .left-section ul li {
+  position: relative;
+}
+
+.productpage main .left-section ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.productpage main .left-section ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .left-section ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .left-section ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper {
+  margin: 1 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/latest/jesko.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img1:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img1:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img1 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/latest/gemera.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img2:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img2:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img2 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/latest/jesko-absolute.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img3:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img3:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img3:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img3 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/legacy/agera-rs.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img4:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img4:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img4:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img4 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/legacy/ccgt.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img5:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img5:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img5:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img5 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/legacy/cc8s.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img6:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img6:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img6:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img6 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/legacy/ccx.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img7:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img7:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.productpage main .right-section .car-wrapper .car-img7:hover ul {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img7 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 {
+  width: 50%;
+  height: 13rem;
+  background-image: url("../assets/productpage/legacy/one.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.productpage main .right-section .car-wrapper .car-img8:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.productpage main .right-section .car-wrapper .car-img8:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.productpage main .right-section .car-wrapper .car-img8:hover ul {
+  top: 60%;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul {
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 120%;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul li span {
+  font-size: 0.7rem;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul li:hover {
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-img8 ul li:hover:after {
+  width: 100%;
+}
+
+.productpage main .right-section .car-wrapper .car-description {
+  -webkit-box-shadow: 1px 1px 16px -10px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 16px -10px rgba(0, 0, 0, 0.8);
+  width: 55%;
+  height: 11rem;
+  padding-left: 2rem;
+  background: white;
+  padding: 1rem;
+  text-align: left;
+  margin: 2rem auto;
+}
+
+.productpage main .right-section .car-wrapper .car-description h2 {
+  margin: 0.5rem 0;
+}
+
+.productpage main .right-section .car-wrapper .car-description p {
+  margin: 0.5rem 0;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button {
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0 1rem;
+  border: 2px solid #010101;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button:hover:before {
+  content: "";
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button:hover {
+  color: black;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button:after {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+}
+
+.productpage main .right-section .car-wrapper .car-description .button-wrapper button:hover:after {
+  opacity: 1;
+  color: white;
+  padding: 1rem;
+  content: "Buy Now";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) {
+  padding: 1rem;
+  background: black;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button:hover:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem solid white;
+  cursor: pointer;
+  background-color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button:hover {
+  color: white;
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button:after {
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
+.productpage main .right-section .car-wrapper .car-description:nth-child(even) button:hover:after {
+  color: black;
+  padding: 1rem;
+  content: "Buy Now";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  width: 7px;
+  height: 1px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  background-color: #fafafa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+nav {
+  z-index: 10;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav h1 {
+  color: black;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover:after {
+  width: 100%;
+}
+
+.newspaper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+  max-width: 1083.33333px;
+  background: #172229;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+}
+
+.newspaper .left {
+  width: 50%;
+  height: 12rem;
+  background-image: url("../assets/homepage/Koenigsegg.jpg");
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.newspaper .right {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 6rem;
+  color: white;
+}
+
+.newspaper .right h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.newspaper .right p {
+  font-size: 1rem;
+  margin: 0.5rem 1rem 0 0;
+}
+
+.newspaper .right .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.newspaper .right .button-wrapper input {
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  height: 1rem;
+  margin-right: 3rem;
+}
+
+.newspaper .right .button-wrapper button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: relative;
+}
+
+.newspaper .right .button-wrapper button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.newspaper .right .button-wrapper button:hover:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem solid white;
+  cursor: pointer;
+  background-color: white;
+}
+
+.newspaper .right .button-wrapper button:hover {
+  color: white;
+}
+
+.newspaper .right .button-wrapper button:after {
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
+.newspaper .right .button-wrapper button:hover:after {
+  color: black;
+  padding: 0rem;
+  content: "Subscribe";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #080b11;
+  color: white;
+}
+
+footer .footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-section .about-us-footer h3 {
+  color: #e1e1e1;
+  font-weight: medium;
+  margin: 1rem 0;
+}
+
+footer .footer-section .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer-section .navigation ul li {
+  position: relative;
+  margin: 0.2rem 0;
+}
+
+footer .footer-section .navigation ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-section .navigation ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-section .navigation ul li:hover {
+  cursor: pointer;
+}
+
+footer .footer-section .navigation ul li:hover:after {
+  width: 100%;
+}
+
+footer .footer-section .latest-vehicle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-section .latest-vehicle ul li {
+  position: relative;
+}
+
+footer .footer-section .latest-vehicle ul li a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+
+footer .footer-section .latest-vehicle ul li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-section .latest-vehicle ul li:hover {
+  cursor: pointer;
+}
+
+footer .footer-section .latest-vehicle ul li:hover:after {
+  width: 100%;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9rem;
+  color: #e1e1e1;
+}
+/*# sourceMappingURL=index.css.map */

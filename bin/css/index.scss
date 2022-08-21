@@ -1,0 +1,264 @@
+@import "_homepage.scss";
+@import "_formPage.scss";
+@import "_productPage.scss";
+
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+  // line-height: 1rem;
+}
+.logo {
+  font-size: 2rem;
+}
+nav {
+  // background: linear-gradient(135deg, #79f1a4 0%, #0e5cad 100%);
+  // position:fixed;
+  z-index: 10;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: black;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      margin: 0 1rem;
+      position: relative;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: black;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+}
+.newspaper {
+  display: flex;
+  margin: 1rem auto;
+  // padding:1rem;
+  max-width: $max-width/1.2;
+  background: #172229;
+  justify-content: space-between;
+  // border: 0.21px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+  .left {
+    width: 50%;
+    height: 12rem;
+    background-image: url("../assets/homepage/Koenigsegg.jpg");
+    background-size: cover;
+    background-position: bottom right;
+  }
+  .right {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+    color: white;
+    h2 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 1rem 0 0;
+    }
+    .button-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      input {
+        padding: 0.5rem 1rem;
+        // background-color:rgba(0, 0, 0, 0);
+        border: 2px solid rgb(255, 255, 255);
+        height: 1rem;
+        margin-right: 3rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-radius: 0.5rem;
+        backdrop-filter: blur(2px);
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          height: 100%;
+          background: rgb(255, 255, 255);
+          left: 0;
+          top: 0px;
+          transition: all 0.3s ease-in-out;
+          color: rgb(0, 0, 0);
+        }
+        &:hover:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          border-radius: 0.2rem solid white;
+          cursor: pointer;
+          background-color: white;
+        }
+        &:hover {
+          color: white;
+        }
+        &:after {
+          transition: all 5s ease-in-out;
+        }
+        &:hover:after {
+          color: black;
+          padding: 0rem;
+          content: "Subscribe";
+          position: absolute;
+          white-space: nowrap;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(8, 11, 17);
+  color: white;
+  .footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    .about-us-footer {
+      h3 {
+        color: rgb(225, 225, 225);
+        font-weight: medium;
+        margin: 1rem 0;
+      }
+    }
+    .navigation {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        list-style: none;
+        li {
+          position: relative;
+          margin: 0.2rem 0;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .latest-vehicle {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        // border: 1px solid red;
+        list-style: none;
+        padding: 0;
+        li {
+          position: relative;
+          a {
+            color: rgb(225, 225, 225);
+            text-decoration: none;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9rem;
+    color: rgb(225, 225, 225);
+  }
+}

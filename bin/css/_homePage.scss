@@ -1,0 +1,290 @@
+$max-width: 1300px;
+.homepage {
+  position: relative;
+  //always use this
+  // border:1px solid red;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  header {
+    padding: none;
+    position: relative;
+    width: 1300px;
+    height: 500px;
+    background-image: url("../assets/homepage/cover.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1300px;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      z-index: 2;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      position: absolute;
+      top: 5%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      transform: skewX(-30deg);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+    }
+    .prev {
+      font-size: 2rem;
+      color: white;
+      z-index: 5;
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.21);
+      backdrop-filter: blur(2px);
+    }
+    .next {
+      backdrop-filter: blur(2px);
+      background-color: rgba(255, 255, 255, 0.21);
+      border-radius: 50%;
+      padding: 0.5rem 1rem;
+      border: 2px solid white;
+      font-size: 2rem;
+      z-index: 5;
+      color: white;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .about-us {
+    background: #172229;
+    color: white;
+    display:flex;
+    max-width:$max-width/1.2;
+    margin:1rem auto;
+    align-items:center;
+    .left{
+      width: 100rem;
+      height: 14rem;
+      background-image: url("../assets/homepage/Koenigsegg-agera.jpg");
+      background-size: cover;
+      background-position: bottom right;
+    }
+    .right{
+      padding:1rem;
+      margin-left:2rem;
+      h2{
+        font-size:1rem;
+        font-weight:bold;
+        margin:0;
+      }
+      p{
+        font-size:1rem;
+        margin:0;
+      }
+      button{
+        padding:0.5rem 1rem;
+        font-size:1rem;
+        margin:0.5rem 0;
+        border:2px solid rgb(255, 255, 255);
+        background-color:rgba(0, 0, 0, 0);
+        color:white;
+        border-radius:.5rem;
+        backdrop-filter:blur(2px);
+        position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            left: 0;
+            top: 0px;
+            transition: all 0.3s ease-in-out;
+            color: rgb(0, 0, 0);
+          }
+          &:hover:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 0.2rem solid white;
+            cursor: pointer;
+            background-color: white;
+          }
+          &:hover {
+            color: white;
+          }
+          &:after {
+            transition: all 5s ease-in-out;
+          }
+          &:hover:after {
+            color: black;
+            padding: 0rem;
+            content: "Learn More";
+            position: absolute;
+            white-space: nowrap;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+      }
+    }
+  }
+
+  .cards-container {
+    padding: 1rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      border-radius:50%;
+      margin: 1rem;
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid black;
+      h2 {
+        white-space: nowrap;
+      }
+      p {
+        white-space: wrap;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  .promotions {
+    // border: 1px solid red;
+    max-width: $max-width/1.2;
+    margin: 1rem auto;
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .container {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        .left {
+          width: $max-width/2.5;
+          height: $max-width/5;
+          transition: all 0.1s ease-in-out;
+          position: relative;
+          background-image: url("../assets/homepage/Nissan-Skyline-GT-R-R34.jpg");
+          background-size: cover;
+          &:after {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $max-width/2.5;
+            height: $max-width/5;
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .right {
+          width: $max-width/2.5;
+          height: $max-width/5;
+          transition: all 0.1s ease-in-out;
+          position: relative;
+          background-image: url("../assets/homepage/Koenigsegg.jpg");
+          background-size: cover;
+          background-position: bottom right;
+          transform: scale(1.4);
+          &:after {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $max-width/2.5;
+            height: $max-width/5;
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+        .text-wrapper {
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+        }
+      }
+    }
+    .bottom-container {
+      margin-top: 1rem;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      .bottom {
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        position: relative;
+        height: $max-width/3.3;
+        background-image: url("../assets/homepage/nissan.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &:after {
+          pointer-events: none;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .text-wrapper {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.21);
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.formpage {
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  main {
+    background-image: url("../assets/formPage/form.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    width: 1300px;
+    height: 530px;
+    .box {
+      z-index: 10;
+      color: white;
+      // border: 1px solid red;
+      position: relative;
+      display: flex;
+      .left {
+        //   transition: all 1s ease-in-out;
+        position: relative;
+        font-weight: medium;
+        margin-top: 1rem;
+        margin-left: 48rem;
+        color: rgb(37, 34, 34);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 10.2224px 23.6393px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(52px);
+        border-radius: 8.94458px;
+        padding: 3rem 2rem;
+        display: inline-block;
+        .wrapper {
+          margin: 1rem 0;
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin: 0.2rem 0;
+          }
+          input {
+            // border: 1px solid red;
+            border: none;
+            border-radius: 0.2rem;
+            height: 2rem;
+            font-size: 1rem;
+            &:focus {
+              // outline: 1px solid $tertiary;
+              font-size: 1rem;
+            }
+          }
+          .flex {
+            display: flex;
+            align-items: center;
+            .bod {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              #BOD {
+                border-radius: 0.2rem;
+                height: 2rem;
+                width: 100%;
+                padding: 0.2rem;
+                font-size: 1rem;
+                &:focus {
+                  // outline: 1px solid $tertiary;
+                  font-size: 1rem;
+                }
+              }
+            }
+            .gender {
+              margin-left: 1rem;
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              select {
+                border-radius: 0.2rem;
+                border: none;
+                height: 2.5rem;
+                width: 100%;
+                padding: 0.2rem;
+                font-size: 1rem;
+                &:focus {
+                  // outline: 1px solid $tertiary;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+        h1 {
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          margin: 0.5rem 0;
+        }
+        .check-box {
+          display: flex;
+          align-items: center;
+          padding: 0.2rem 0;
+          label {
+            margin-left: 0.5rem;
+          }
+        }
+        button {
+          margin-top: 1rem;
+          font-weight: bold;
+          padding: 0.5rem;
+          font-size: 1rem;
+          // border: 2px solid rgb(1, 1, 1);
+          background-color: rgba(0, 0, 0, 0);
+          color: black;
+          border-radius: 0.5rem;
+          backdrop-filter: blur(2px);
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            left: 0;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+            color: white;
+          }
+          &:hover:before {
+            content: "";
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+          }
+          &:hover {
+            color: black;
+          }
+          &:after {
+            transition: all 0.1s ease-in-out;
+            opacity: 0;
+          }
+          &:hover:after {
+            opacity: 1;
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            content: "Subscribe";
+            position: absolute;
+            white-space: nowrap;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .right {
+        z-index: -1;
+        position: absolute;
+        padding: 3rem;
+        top:10%;
+        display: flex;
+        h1 {
+          font-size: 4rem;
+          width: 45rem;
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+          user-select: none;
+        }
+      }
+    }
+  }
+}
